@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <style src="server.js"></style>
+</head>
+
+<body>
+    <div class="form">
+        <div id="iconuser">
+            <em class="bi bi-person-fill"></em>
+        </div>
+        <form method="POST" action="Users.findByPk">
+            <p>User sign in</p>
+            <div class="input-wrapper">
+                <input type="text" id="username" placeholder="User ID "> 
+                <em id="icon" class="bi bi-person"></em>
+            </div>
+            <br>
+            <div class="input-wrapper">
+                <input type="password" id="pwd" placeholder="Password"> 
+                <em id="icon" class="bi bi-lock-fill"></em>
+            </div>
+            <br>
+            <input type="submit" id="button" value="LOGIN">
+            <p id="resetpwd">Forgot Password ?</p></h3>
+        </form>
+    </div>
+</body>
+</html>
